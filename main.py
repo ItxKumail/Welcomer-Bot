@@ -51,11 +51,12 @@ async def on_member_join(member):
     font = ImageFont.truetype(font_path, size=16)
     
     # Shadow settings
+    text_position = (100, 100)
     shadow_color = (0, 0, 0)
     shadow_offset = (2, 2)
     # Draw shadow (first)
     draw.text(
-    (text_position[100, 100] + shadow_offset[0], text_position[1] + shadow_offset[1]),
+    (text_position(100, 100) + shadow_offset[0], text_position[1] + shadow_offset[1]),
     welcome_text,
     font=font,
     fill=shadow_color
