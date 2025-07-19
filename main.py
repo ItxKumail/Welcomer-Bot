@@ -47,7 +47,7 @@ async def on_member_join(member):
     draw = ImageDraw.Draw(bg_image)
     font_path = "fonts/Montserrat-Bold.ttf"
     try:
-        font = ImageFont.truetype(font_path, size=24)
+        font = ImageFont.truetype(font_path, size=21)
     except:
         font = ImageFont.load_default()
 
